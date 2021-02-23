@@ -20,6 +20,7 @@
 > 3. --hard : commit은 취소하고 해당 파일들은 unstaged 상채로 working directory에서 삭제
 > 
 > 예시
+> 
 >   git reset --mixed HEAD^ // default
 >   git reset HEAD^ // 위와 동일
 >   git reset HEAD~1 // 마지막 1개의 commit 취소. 위와 동일 
