@@ -21,6 +21,6 @@
 > 
 > 예시
 > 
->   git reset --mixed HEAD^ // default
->   git reset HEAD^ // 위와 동일
->   git reset HEAD~1 // 마지막 1개의 commit 취소. 위와 동일 
+>    git reset --mixed HEAD^ // default
+>    git reset HEAD^ // 위와 동일
+>    git reset HEAD~1 // 마지막 1개의 commit 취소. 위와 동일 
