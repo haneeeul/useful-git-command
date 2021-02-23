@@ -59,21 +59,21 @@
 
 1. 원본 저장소 등록하기
     
-    git remote -v // 등록된 저장소 확인
-    git remote add upstream [원격 저장소.git] // 원격 저장소를 upstream 으로 등록
+       git remote -v // 등록된 저장소 확인
+       git remote add upstream [원격 저장소.git] // 원격 저장소를 upstream 으로 등록
     
 2. 원본 저장소 변경분 로컬로 가져오기
 
-    git fetch upstream [파일이 저장된 원본 저장소의 브랜치 이름] // 여기서는 main 이라 하겠음
-    
+       git fetch upstream [파일이 저장된 원본 저장소의 브랜치 이름] // 여기서는 main 이라 하겠음
+     
 3. 로컬에서 원본 저장소와 포크한 저장소 병합하기
 
-    git checkout haneul // 포크한 저장소의 로컬 브랜치로 이동
-    git merge upstream/main // 현재 저장소에(origin/haneul) 원본 브랜치를(upstream/main) merge
+       git checkout haneul // 포크한 저장소의 로컬 브랜치로 이동
+       git merge upstream/main // 현재 저장소에(origin/haneul) 원본 브랜치를(upstream/main) merge
     
 4. 포크한 저장소를 원격 git에 업데이트하기
 
-    git push origin haneul
+       git push origin haneul
   
   
 ## git rm
