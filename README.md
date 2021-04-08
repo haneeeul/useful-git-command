@@ -93,14 +93,10 @@
     
     
 ## git restore(git version >= 2.23)
-
 작업 트리에서 수정한 파일을 되돌리는 명령어
-### git checkout
-1. 브랜치 변경 시에 사용
-2. __작업 트리에서 수정한 파일을 되돌릴 때 사용__
-
-
-    git checkout --test.c
 
     git restore test.c // git checkout --test.c 와 같다.
 
+### git checkout
+1. 브랜치 변경 시에 사용
+2. __작업 트리에서 수정한 파일을 되돌릴 때 사용__
