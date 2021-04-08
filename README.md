@@ -26,7 +26,10 @@
 >     git reset HEAD^ // 위와 동일
 >     git reset HEAD~1 // 마지막 1개의 commit 취소. 위와 동일
 > 
-
+>>    git reset HEAD test.c
+>> 는 이제 이렇게도 사용 가능하다
+>>    git restore --staged test.c
+>> 
 만약 현재 디렉토리 (working directory)를 원격 저장소의 마지막 commit 상태로 되돌리고 싶다면?
 
     git reset --hard HEAD // 마지막 commit 이후로 추가한 파일들은 사라진다.
@@ -85,4 +88,14 @@
     git push origin main
     
     
+## git restore(git version >= 2.23)
+
+작업 트리에서 수정한 파일을 되돌리는 명령어
+
+    git restore test.c // git checkout --test.c
+
+
+### git checkout
+1. 브랜치 변경 시에 사용
+2. *작업 트리에서 수정한 파일을 되돌릴 때 사용*
 
