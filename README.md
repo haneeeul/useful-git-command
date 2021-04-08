@@ -99,7 +99,8 @@
 1. 브랜치 변경 시에 사용
 2. __작업 트리에서 수정한 파일을 되돌릴 때 사용__
 
+
     git checkout --test.c
 
-    git restore test.c // git checkout --test.c
+    git restore test.c // git checkout --test.c 와 같다.
 
