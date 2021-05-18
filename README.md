@@ -1,3 +1,39 @@
+git basic
+===================================
+
+git remote add [다른 이름] [repository url] = repo url에 다른 이름을 붙이는 것
+git checkout -b [branch name] = 브랜치를 만들고 그 브랜치로 이동
+git remote = 현재 romote 종류 확인 가능
+git branch = 현재 브랜치들 목록 확인
+git push origin master = 현재 브랜치인 master에서 origin으로 push 한다
+cat .git/config = 현재 레포지토리 url 확인하기 등등 깃 관리를 위한 메타데이터가 저장되어 있음
+
+
+### <우리 팀의 프로젝트를 깃으로 관리하기>
+1. 팀명으로 프로젝트 생성
+2. fork로 각 팀원들이 프로젝트 가져오기
+3. 자신의 브런치 생성 후에 커밋
+4. pull request로 합치기!!
+
+> <git과 github의 차이는?>
+> git은 컴퓨터 local에 설치되어 있는 소스코드 관리 프로그램(오프라인)
+> github는 remote 저장소가 있는 외부 서버를 지칭한다.(온라인)
+> 
+> <commit과 push의 차이는?>
+> commit은 local 작업 폴더에 history를 쌓는 것이어서 인터넷을 사용하지 않고
+> push는 remote 저장소에 history를 쌓는 것이어서 인터넷을 사용한다.
+> 
+> <fetch와 pull의 차이는?>
+> 두 명령 모두 remote 저장소에서 최신 commit 정보들을 가져오지만
+> fetch는 가져와서 임시폴더(.git)에 저장하고
+> pull은 바로 현재 branch에 merge 한다
+> 
+> <rebase와 merge의 차이는?>
+> 두 명령 모두 두개의 branch의 차이점 commit을 합치지만
+> rebase는 합치기 전에 되감기(rewinding)를 하고
+> merge는 그냥 합친다
+
+
 자주 사용하는 git command & 문제 해결 방법
 ===================================
 
@@ -84,5 +120,6 @@
     git commit -m "delete file"
     git push origin main
     
-    
+
+
 
