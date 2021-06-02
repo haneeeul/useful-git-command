@@ -1,3 +1,8 @@
+## 목차
+* [git basic](#git-basic)
+* [자주 사용하는 git command & 문제 해결 방법](#자주-사용하는-git-command-&-문제-해결-방법)
+
+<br><br>
 git basic
 ===================================
 
@@ -41,7 +46,7 @@ git basic
 > 
 > merge는 그냥 합친다
 
-
+<br><br>
 자주 사용하는 git command & 문제 해결 방법
 ===================================
 
@@ -135,16 +140,11 @@ git basic
     git commit -m "delete file"
     git push origin main
     
-<<<<<<< HEAD
-
-
-=======
     
 ## git restore(git version >= 2.23)
 작업 트리에서 수정한 파일을 되돌리는 명령어
 
     git restore test.c // git checkout --test.c 와 같다.
->>>>>>> 53330264eb4e600c63db5b6f13cbf741b2ba566f
 
 ### git checkout
 1. 브랜치 변경 시에 사용
